@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Grids</title>
+    <style>
+      .Wrapper div {
+        background: #eee;
+        padding: 1em;
+      }
+
+      .Wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+
+      .Wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="Wrapper">
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi impedit
+        nam eaque error fugiat esse, veritatis repellendus aliquid quia odio
+        sapiente provident accusantium doloremque dignissimos pariatur suscipit
+        placeat quas, hic eos illo excepturi veniam ullam asperiores ratione.
+        Facere itaque praesentium reprehenderit aliquid. Natus est laboriosam
+        deserunt ducimus quam corporis accusantium, beatae incidunt assumenda,
+        quis hic voluptas officiis consectetur quisquam dicta mollitia delectus
+        sequi. Id fugit facere, quam natus rem nostrum quo. Deleniti explicabo
+        veritatis, autem praesentium corrupti amet fugiat accusantium.
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores libero
+        labore ab culpa? Quibusdam ullam nemo impedit distinctio laborum
+        obcaecati, iusto sapiente quod quam totam eligendi modi et dolores id!
+      </div>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi impedit
+        nam eaque error fugiat esse, veritatis repellendus aliquid quia odio
+        sapiente provident accusantium doloremque dignissimos pariatur suscipit
+        placeat quas, hic eos illo excepturi veniam ullam asperiores ratione.
+        Facere itaque praesentium reprehenderit aliquid. Natus est laboriosam
+        deserunt ducimus quam corporis accusantium, beatae incidunt assumenda,
+        quis hic voluptas officiis consectetur quisquam dicta mollitia delectus
+        sequi. Id fugit facere, quam natus rem nostrum quo. Deleniti explicabo
+        veritatis, autem praesentium corrupti amet fugiat accusantium.
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores libero
+        labore ab culpa? Quibusdam ullam nemo impedit distinctio laborum
+        obcaecati, iusto sapiente quod quam totam eligendi modi et dolores id!
+      </div>
+    </div>
+  </body>
+</html>
